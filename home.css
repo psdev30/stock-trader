@@ -1,3 +1,14 @@
+.container {
+    display: block;
+    text-align: center;
+    margin: 0% auto 0;
+}
+
+.search {
+    margin-left: 10px;
+}
+
+
 .fade-in-headers {
     animation: fadeIn ease 4s;
     -webkit-animation: fadeIn ease 4s;
@@ -23,26 +34,46 @@
 }
 
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
