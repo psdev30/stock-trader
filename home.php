@@ -36,7 +36,7 @@ if ($_POST) {
         $request = $iex->request('GET', $IEX_CLOUD_SANDBOX_BASE_URL . '/stable/stock/' . $inputTicker . '/quote?token=' . $IEX_CLOUD_SANDBOX_API_KEY);
         $resp = $request->getBody()->getContents();
         $_SESSION['tickerInfo'] = $resp;
-        header("Location: stock_info.php");
+        header("Location: stock_info.php?ticker=$inputTicker");
 
     } catch (\GuzzleHttp\Exception\GuzzleException $e) {
         echo "<script>alert('Sorry, you entered an invalid ticker. Try again!')</script>";
@@ -65,7 +65,6 @@ if ($_POST) {
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="">Watchlists</a>
             <a class="mdl-navigation__link" href="">Trade</a>
-
         </nav>
     </div>
     <main class="mdl-layout__content">
