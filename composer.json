@@ -1,0 +1,5 @@
+{
+    "require": {
+        "jeffreyhyer/alpaca-trade-api-php": "^2.1"
+    }
+}
